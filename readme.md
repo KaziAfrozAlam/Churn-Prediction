@@ -21,6 +21,7 @@ churn_prediction/
 │   ├── churn_model.pkl
 │   └── features.pkl
 ├── notebooks/             # Jupyter notebooks for EDA
+│   ├── eda.py
 ├── plots/                 # Generated visualizations
 ├── preprocess.py          # Data preprocessing script
 ├── train_model.py         # Model training script

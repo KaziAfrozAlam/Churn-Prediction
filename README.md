@@ -6,28 +6,41 @@ A machine learning API built with FastAPI that predicts customer churn using a R
 
 ```
 churn_prediction/
-├── app/                    # FastAPI application
-│   ├── main.py            # API endpoints
-│   ├── model_loader.py    # Model loading utilities
-│   ├── schema.py          # Data validation schemas
-│   └── __init__.py
-├── data/                  # Dataset and processed data
-│   ├── Teleco-Customer-churn.csv
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # Application entry point
+│   ├── model_loader.py      # Loads trained model and feature artifacts
+│   └── schema.py            # Input/output data schema definitions
+│
+├── data/
+│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Raw dataset
 │   ├── X_train.csv
 │   ├── X_test.csv
 │   ├── y_train.csv
 │   └── y_test.csv
-├── model/                 # Trained models
-│   ├── churn_model.pkl
-│   └── features.pkl
-├── notebooks/             # Jupyter notebooks for EDA
-│   ├── eda.py
-├── plots/                 # Generated visualizations
-├── preprocess.py          # Data preprocessing script
-├── train_model.py         # Model training script
-├── requirements.txt       # Python dependencies
-├── Dockerfile            # Docker configuration
-└── README.md
+│
+├── model/
+│   ├── churn_model.pkl      # Trained ML model
+│   └── features.pkl         # Saved feature columns
+│
+├── notebook/
+│   ├── eda.py               # Exploratory Data Analysis
+│   └── plots/
+│       ├── Figure_1.png
+│       ├── monthlychargesvschurn.png
+│       ├── tenurevschurn.png
+│       └── totalchargesvschurn.png
+│
+├── sagemaker/
+│   ├── inference.py         # Inference script for deployment
+│   └── train.py             # Training script for SageMaker
+│
+├── preprocess.py            # Data preprocessing and feature engineering
+├── train_model.py           # Model training pipeline
+├── Dockerfile               # Docker configuration
+├── requirements.txt         # Python dependencies
+├── LICENSE                  # License information
+└── README.md                # Project documentation
 ```
 
 ## How We Built This Project

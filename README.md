@@ -1,6 +1,7 @@
 # Customer Churn Prediction API
 
-A machine learning API built with FastAPI that predicts customer churn using a Random Forest classifier. The project includes data preprocessing, model training, and a REST API for real-time predictions.
+A production-ready Machine Learning API built using Python, FastAPI, Docker, and AWS Cloud services to predict customer churn.
+The project demonstrates the complete ML lifecycle including preprocessing, training, containerization, and deployment using AWS S3, SageMaker, ECR, EC2, IAM, and AWS CLI.
 
 ## Project Structure
 
@@ -25,11 +26,11 @@ churn_prediction/
 │
 ├── notebook/
 │   ├── eda.py               # Exploratory Data Analysis
-│   └── plots/
-│       ├── Figure_1.png
-│       ├── monthlychargesvschurn.png
-│       ├── tenurevschurn.png
-│       └── totalchargesvschurn.png
+├── plots/
+│     ├── Figure_1.png
+│     ├── monthlychargesvschurn.png
+│     ├── tenurevschurn.png
+│     └── totalchargesvschurn.png
 │
 ├── sagemaker/
 │   ├── inference.py         # Inference script for deployment
@@ -71,6 +72,7 @@ churn_prediction/
 - Python 3.10+
 - Git
 - Docker (optional)
+- AWS CLI (for cloud deployment)
 
 ### Step 1: Clone Repository
 ```bash
